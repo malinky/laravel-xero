@@ -17,11 +17,17 @@ composer require craig-ramsay/laravel-xero
 ``` php
 use XeroPHP\Application\PrivateApplication;
 
-class App {
+class ContactController {
     protected $xero;
 
-    public function __construct(PrivateApplication $xero) {
+    public function __construct(PrivateApplication $xero)
+    {
         $this->xero = $xero;
+    }
+    
+    public function index()
+    {
+        $contacts = $this->xero->load(\XeroPHP\Models\Accounting\Contact::class)->execute();
     }
 }
 ```
