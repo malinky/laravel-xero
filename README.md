@@ -16,9 +16,9 @@ Publish the configuration file by running the `php artisan vendor:publish` comma
 
 ## Usage
 
-The classes can be used by resolving from the Container or via the Facades. The examples below show the different methods of accessing a Xero Private Application and returning the contacts list. The package also allows you to access Xero Partner or Public applications.
+Use the classes by resolving from the Container or via the Facades. The examples below show different methods of accessing a Xero Private Application and returning the contacts list. The package also allows you to access Xero Partner or Public applications.
 
-### Dependency Injection
+### Automatic Injection
 
 ``` php
 use XeroPHP\Application\PrivateApplication;
@@ -38,7 +38,7 @@ class ContactController {
 }
 ```
 
-### The Container
+### Resolve out of the Container
 
 ``` php
 use XeroPHP\Application\PrivateApplication;
