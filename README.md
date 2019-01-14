@@ -12,7 +12,7 @@ composer require craig-ramsay/laravel-xero
 
 Laravel 5.5 uses Package Discovery, therefore the Service Provider and Facades are registered automatically.
 
-Publish the configuration file `php artisan vendor:publish` and add your Xero `consumer_key`, `consumer_secret` and `rsa_private_key` to the newly created `config/xero.php` file. The xero.php config file contains instructions on how to generate these values.
+Publish the configuration file by running the `php artisan vendor:publish` command. Add your Xero `consumer_key`, `consumer_secret` and `rsa_private_key` to the newly created `config/xero.php` file. The xero.php config file contains instructions on how to generate these values.
 
 ## Usage
 
