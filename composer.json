@@ -1,0 +1,34 @@
+{
+  "name": "craig-ramsay/laravel-xero",
+  "description": "A Laravel wrapper for Xero.",
+  "homepage": "https://github.com/malinky/laravel-xero",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Craig Ramsay",
+      "email": "craigdavidramsay@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CraigRamsay\\Xero\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=5.5.0",
+    "calcinai/xero-php": "^1.8",
+    "illuminate/support": "^5.7"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CraigRamsay\\Xero\\XeroServiceProvider"
+      ],
+      "aliases": {
+        "XeroPartner": "CraigRamsay\\Xero\\Facades\\XeroPartner",
+        "XeroPrivate": "CraigRamsay\\Xero\\Facades\\XeroPrivate",
+        "XeroPublic": "CraigRamsay\\Xero\\Facades\\XeroPublic"
+      }
+    }
+  }
+}
